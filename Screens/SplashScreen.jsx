@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Dimensions, Image , TouchableOpacity } from 'react-native'
+import { View, Text, Dimensions, Image , TouchableOpacity, ScrollView } from 'react-native'
 
 import Bubles from '../Components/Bubles';
 
@@ -10,7 +10,7 @@ const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
   return (
-    <View style={{flex: 1}}>
+    <ScrollView style={{flex: 1}}>
       <Bubles  />
 
       <Text style={{fontWeight: 'bold', fontSize: 32, color: '#01879B', alignSelf: 'center'}}>ToDo</Text>
@@ -37,7 +37,7 @@ const windowHeight = Dimensions.get('window').height;
       
 
 
-    </View>
+    </ScrollView>
   )
 }
 
